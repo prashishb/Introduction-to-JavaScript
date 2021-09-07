@@ -179,9 +179,55 @@ HINT: Remember that the order in which we pass in our arguments matters when it 
 */
 
 function game(user, computer){
-  /*add your code here*/
+
+  let win = 'you win!';
+  let lose = 'you lose!';
+  let tie = "it's a tie";
+
+  //Scenario if user chooses Scissors
+  if (user === 'Scissors') {
+    if (computer === 'Paper') {
+      return win;
+    } else {
+      return lose;
+    }
+  }
+  //Scenario if user picks Paper
+  else if (user === 'Paper') {
+    if (computer === 'Rock') {
+      return win;
+    } else {
+      return lose;
+    }
+  }
+  //Scenario if user picks Rock
+  else if (user === 'Rock') {
+    if (computer === 'Scissors') {
+      return win;
+    } else {
+      return lose;
+    }
+  }
+  //Scenario when user choice = computer choice
+  else if (user === computer) {
+    return tie;
+  }
 }
 
+function computerChoice() {
+  const randomNum = Math.floor(Math.random() * 3);
+  if (randomNum === 0) {
+    return 'Scissors';
+  }
+  else if (randomNum === 1) {
+    return 'Paper';
+  }
+  else if (randomNum === 2) {
+    return 'Rock';
+  }
+}
+
+console.log(user, computerChoice());
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -195,8 +241,8 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-  /*add your code here*/
+function miles(km){
+  return km * 0.621371;
 }
 
 
