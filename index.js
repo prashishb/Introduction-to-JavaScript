@@ -40,7 +40,13 @@ Do the following:
 */
 
 
+var val1 = 7;
+var val2 = 8;
 
+if (val2 === 8) {
+  val1 = 5;
+  console.log(val1);
+}
 
 
 /*
