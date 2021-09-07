@@ -196,7 +196,7 @@ function game(user, computer){
     computer = 'Paper';
   }
   else if (computer === 2) {
-    computer = 'Rock'
+    computer = 'Rock';
   }
 
   if (user === 'Scissors' && computer === 'Paper') {
