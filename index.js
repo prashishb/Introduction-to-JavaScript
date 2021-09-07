@@ -199,35 +199,23 @@ function game(user, computer){
     computer = 'Rock'
   }
 
-  //Scenario if user chooses Scissors
-  if (user === 'Scissors') {
-    if (computer === 'Paper') {
-      return win;
-    } else {
-      return lose;
-    }
+  if (user === 'Scissors' && computer === 'Paper') {
+    return win;
   }
-  //Scenario if user picks Paper
-  else if (user === 'Paper') {
-    if (computer === 'Rock') {
-      return win;
-    } else {
-      return lose;
-    }
+  else if (user === 'Paper' && computer === 'Rock') {
+    return win;
   }
-  //Scenario if user picks Rock
-  else if (user === 'Rock') {
-    if (computer === 'Scissors') {
-      return win;
-    } else {
-      return lose;
-    }
+  else if (user === 'Rock' && computer === 'Scissors') {
+    return win;
   }
-  //Scenario when user choice = computer choice
   else if (user === computer) {
     return tie;
   }
+  else {
+    return lose;
+  }
 }
+
 
 console.log(game('Rock', computer));
 
