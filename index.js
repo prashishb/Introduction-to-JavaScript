@@ -20,11 +20,13 @@ Do the following:
    HINT: no function required
 */
 
-var votingAge = 7;
+var votingAge = 27;
 
 if (votingAge >= 18) {
   console.log('true');
-} else console.log('false');
+} else {
+  console.log('false');
+}
 
 
 
@@ -45,8 +47,9 @@ var val2 = 8;
 
 if (val2 === 8) {
   val1 = 5;
-  console.log(val1);
 }
+
+console.log(val1);
 
 
 /*
@@ -78,6 +81,8 @@ function multiply(a, b){
   return a * b;
 }
 
+console.log(multiply(5, 6));
+
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -94,6 +99,7 @@ function dogYears(age){
   return age * 7;
 }
 
+console.log(dogYears(4));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -176,11 +182,22 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
+let computer = Math.floor(Math.random() * 3);
 function game(user, computer){
 
   let win = 'you win!';
   let lose = 'you lose!';
   let tie = "it's a tie";
+
+  if (computer === 0) {
+    computer = 'Scissors';
+  }
+  else if (computer === 1) {
+    computer = 'Paper';
+  }
+  else if (computer === 2) {
+    computer = 'Rock'
+  }
 
   //Scenario if user chooses Scissors
   if (user === 'Scissors') {
@@ -212,20 +229,7 @@ function game(user, computer){
   }
 }
 
-function computerChoice() {
-  const randomNum = Math.floor(Math.random() * 3);
-  if (randomNum === 0) {
-    return 'Scissors';
-  }
-  else if (randomNum === 1) {
-    return 'Paper';
-  }
-  else if (randomNum === 2) {
-    return 'Rock';
-  }
-}
-
-console.log(game('Rock', computerChoice()));
+console.log(game('Rock', computer));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -243,6 +247,7 @@ function miles(km){
   return km * 0.621371;
 }
 
+console.log(miles(40));
 
 
 //Task 5b - Feet to CM
@@ -257,6 +262,7 @@ function feet(cm){
   return cm / 30.48;
 }
 
+console.log(feet(30.48));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -306,7 +312,7 @@ function grade(score){
   else if (score >= 60) {
     return 'you got a D';
   } else {
-    return 'you got an F'
+    return 'you got an F';
   }
 }
 
@@ -326,8 +332,8 @@ HINT - try looking up the .includes() method
 */
 
 
-function vowelCounter(/*add your code here*/) {
-  /*add your code here*/
+function vowelCounter(string) {
+
 }
 
 
