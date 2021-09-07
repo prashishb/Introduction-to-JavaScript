@@ -60,7 +60,9 @@ Do the following:
    HINT: look up the Number method
 */
 
-
+var aString = '1999';
+Number(aString);
+console.log(aString);
 
 
 /*
@@ -72,8 +74,8 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-  /*add your code here*/
+function multiply(a, b){
+  return a * b;
 }
 
 
