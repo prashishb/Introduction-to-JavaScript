@@ -189,22 +189,22 @@ function game(user, computer){
   let tie = "it's a tie";
 
   if (computer === 0) {
-    computer = 'Scissors';
+    computer = 'scissors';
   }
   else if (computer === 1) {
-    computer = 'Paper';
+    computer = 'paper';
   }
   else if (computer === 2) {
-    computer = 'Rock';
+    computer = 'rock';
   }
 
-  if (user === 'Scissors' && computer === 'Paper') {
+  if (user === 'scissors' && computer === 'paper') {
     return win;
   }
-  else if (user === 'Paper' && computer === 'Rock') {
+  else if (user === 'paper' && computer === 'rock') {
     return win;
   }
-  else if (user === 'Rock' && computer === 'Scissors') {
+  else if (user === 'rock' && computer === 'scissors') {
     return win;
   }
   else if (user === computer) {
@@ -215,7 +215,7 @@ function game(user, computer){
   }
 }
 
-console.log(game('Rock', computer));
+console.log(game('scissors', 'rock'));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
