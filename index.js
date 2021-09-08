@@ -148,15 +148,15 @@ function hungryDog(weight, age) {
   else if (age < 0.333) {
     return weight * 0.1;
   }
-  else if (age >= 0.333 && age < 0.5833) {
+  else if (age >= 0.333 && age < 0.583) {
     return weight * 0.05;
   }
-  else if (age < 1 && age >= 0.5833) {
+  else if (age < 1 && age >= 0.583) {
     return weight * 0.04;
   }
 }
 
-console.log(hungryDog(15, 1));
+console.log(hungryDog(4, 0.583));
 
 
 
